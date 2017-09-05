@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gap:plugin name="com.admob.plugin" version="3.0.0" source="plugins.cordova.io" />
-<widget id="com.timkeldenich.GithubINeverDid" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>GithubINeverDid</name>
+<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>INeverDidDieDritte</name>
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
@@ -11,6 +10,7 @@
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <gap:plugin name="com.admob.plugin" version="3.0.0" source="plugins.cordova.io" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
     <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
