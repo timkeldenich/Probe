@@ -1,4 +1,4 @@
-var game = new Phaser.Game(1080, 1920, Phaser.CANVAS, 'phaser-exa', { preload: preload, create: create, update: update});
+var game = new Phaser.Game(720, 1280, Phaser.CANVAS, 'phaser-exa', { preload: preload, create: create, update: update});
 function preload(){
 this.load.image('google','assets/googleadd.png');
 }
