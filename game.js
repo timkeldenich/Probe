@@ -1,6 +1,6 @@
-var game = new Phaser.Game(720, 1280, Phaser.CANVAS, 'phaser-exa', { preload: preload, create: create, update: update});
+var game = new Phaser.Game(1080, 1920, Phaser.CANVAS, 'phaser-exa', { preload: preload, create: create, update: update});
 function preload(){
-this.load.image('google','assets/googleadd.png');
+
 }
 var RQ;
 var google;
@@ -21,6 +21,7 @@ var style2 = { font: "35px Arial", fill: "#333333", align: "center" };
 
 
 function create(){
+	Admob();
 	if (game.device.desktop == false) {
             // Set the scaling mode to SHOW_ALL to show all the game
             game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
@@ -286,3 +287,16 @@ function plus2(){
 	//moin++;
 
 }
+function Admob(){
+	admob.initAdmob("ca-app-pub-9830485348519112/2657112571","ca-app-pub-9830485348519112~4702366576");
+	document.addEventListener(admob.Event.onInterstitialReceive, this.onInterstitialReceive, false);
+    admob.cacheInterstitial();
+    admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
+    admob.showBannerAbsolute(admob.BannerSize.BANNER,10,70);
+    admob.isInterstitialReady(function(isReady){
+    if(isReady){
+        admob.showInterstitial();
+    }
+});
+
+} 
