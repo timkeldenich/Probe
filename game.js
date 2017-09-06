@@ -1,4 +1,4 @@
-var game = new Phaser.Game(1080, 1920, Phaser.CANVAS, 'phaser-exa', { preload: preload, create: create, update: update});
+var game = new Phaser.Game(720,1280, Phaser.CANVAS, 'phaser-exa', { preload: preload, create: create, update: update});
 function preload(){
 
 }
@@ -292,7 +292,7 @@ function Admob(){
 	document.addEventListener(admob.Event.onInterstitialReceive, this.onInterstitialReceive, false);
     admob.cacheInterstitial();
     admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
-    admob.showBannerAbsolute(admob.BannerSize.BANNER,10,70);
+    admob.showBannerAbsolute(admob.BannerSize.BANNER,0,70);
     admob.isInterstitialReady(function(isReady){
     if(isReady){
         admob.showInterstitial();
