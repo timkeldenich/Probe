@@ -21,7 +21,7 @@ var style2 = { font: "35px Arial", fill: "#333333", align: "center" };
 
 
 function create(){
-	Admob();
+	
 	if (game.device.desktop == false) {
             // Set the scaling mode to SHOW_ALL to show all the game
             game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
